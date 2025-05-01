@@ -63,3 +63,6 @@ void loop() {
 }
 ```
 *INSERT ARDUNIO LED FADE OUTPUT VIDEO*
+
+### **ANALOGUE OUTPUT**
+
