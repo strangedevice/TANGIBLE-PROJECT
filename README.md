@@ -5,7 +5,7 @@ TANGIBLE DOCUMENTATION
 
 ## **EXPERIMENTS**
 
-THIS IS A LIST OF THE EXPERIMENTS THAT WE DID IN CLASS
+//THIS IS A LIST OF THE EXPERIMENTS THAT WE DID IN CLASS
 
 ### **DIGITAL OUTPUT**
 
@@ -15,7 +15,7 @@ When experimenting with the digital output of the Arduino we used LEDs to show a
 
 ![LED Schematics Diagram](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/LED_SCHEMATICS.jpg)
 
-Here is some Blink code that will turn the LED on and off:
+Here is some Blink code that will turn the LED on and off though this code won't loop
 
 ```
 // the setup function runs once when you press reset or power the board
@@ -64,7 +64,15 @@ void loop() {
   delay(30);
 }
 ```
+
 *INSERT ARDUNIO LED FADE OUTPUT VIDEO*
+
+//Reflection on how this can be applicatied in games
 
 ### **ANALOGUE OUTPUT**
 
+When experimenting with analogue...
+
+*INSERT LIGHT DEPENDENT RESISITOR SCHEMATICS*
+
+*INSERT POTENTIONMETER SCHEMATICS*
