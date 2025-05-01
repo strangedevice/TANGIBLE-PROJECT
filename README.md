@@ -11,6 +11,8 @@ TANGIBLE DOCUMENTATION
 
 When experimenting with the digital output of the Arduino we used LEDs to show an output.
 
+Here is a circuit diagram on a LED output.
+
 ![LED Schematics Diagram](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/LED_SCHEMATICS.jpg)
 
 Here is some Blink code that will turn the LED on and off though this code won't loop
@@ -32,6 +34,7 @@ void loop() {
 ```
 
 *INSERT ARDUNIO LED OUTPUT VIDEO*
+![Video of an LED blinking on a reapeted loop]https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/IMG_20250220_125427151.jpg
 
 Another LED output program is a fade in which the LED will loop fading on and off:
 
