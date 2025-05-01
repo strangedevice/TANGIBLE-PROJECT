@@ -14,7 +14,8 @@ When experimenting with the digital output of the Arduino we used LEDs to show a
 * *INSERT ARDUNIO LED OUTPUT DIAGRAM* *
 
 Here is some Blink code that will make the LED which will turn the LED on and off:
-'''
+
+```
 // the setup function runs once when you press reset or power the board
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
@@ -28,4 +29,4 @@ void loop() {
   digitalWrite(LED_BUILTIN, LOW);   // turn the LED off by making the voltage LOW
   delay(1000);                      // wait for a second
 }
-'''
+```
