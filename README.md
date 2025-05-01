@@ -13,6 +13,8 @@ When experimenting with the digital output of the Arduino we used LEDs to show a
 
 *INSERT ARDUNIO LED OUTPUT SCHEMATICS DIAGRAM*
 
+![LED Schematics Diagram](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/LED_SCHEMATICS.jpg)
+
 Here is some Blink code that will turn the LED on and off:
 
 ```
