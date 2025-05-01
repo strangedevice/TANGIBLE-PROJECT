@@ -11,7 +11,7 @@ TANGIBLE DOCUMENTATION
 
 When experimenting with the digital output of the Arduino we used LEDs to show an output.
 
-This is a phyisically built LED output circuit:
+This is a simple built LED output circuit:
 
 ![Physical LED circuit](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/IMG_20250220_125427151.jpg)
 
@@ -77,10 +77,11 @@ void loop() {
 //Reflection on how this can be applicatied in games
 The digital LED output is very basic but could probably used in a multidude of ways such as it could be used as an health system turning of the LED when taken damage.
 
-### **ANALOGUE OUTPUT**
+### **ANALOGUE**
 
 When experimenting with analogue... A 
 
+This is a basic physical built potentiometer and light dependent resistor
 Here is a circuit diagram of a light dependent resistor:
 
 *INSERT LIGHT DEPENDENT RESISITOR SCHEMATICS*
@@ -88,6 +89,10 @@ Here is a circuit diagram of a light dependent resistor:
 Here is a circuit diagram of a potentiometer:
 
 *INSERT POTENTIOMETER SCHEMATICS*
+
+//How this can potentially be applied
+
+### **SERVOS AND MOTION**
 
 ## **GAME DESIGN IDEAS**
 
