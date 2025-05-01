@@ -13,6 +13,8 @@ When experimenting with the digital output of the Arduino we used LEDs to show a
 
 This is a phyisically built LED output circuit:
 
+![Physical LED circuit](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/IMG_20250220_125427151.jpg)
+
 Here is a circuit diagram on a LED output.
 
 ![LED Schematics Diagram](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/LED_SCHEMATICS.jpg)
