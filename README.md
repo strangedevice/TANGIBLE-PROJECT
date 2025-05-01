@@ -11,8 +11,6 @@ TANGIBLE DOCUMENTATION
 
 When experimenting with the digital output of the Arduino we used LEDs to show an output.
 
-*INSERT ARDUNIO LED OUTPUT SCHEMATICS DIAGRAM*
-
 ![LED Schematics Diagram](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/LED_SCHEMATICS.jpg)
 
 Here is some Blink code that will turn the LED on and off though this code won't loop
@@ -68,10 +66,11 @@ void loop() {
 *INSERT ARDUNIO LED FADE OUTPUT VIDEO*
 
 //Reflection on how this can be applicatied in games
+The digital LED output is very basic but could probably used in a multidude of ways such as it could be used as an health system turning of the LED when taken damage.
 
 ### **ANALOGUE OUTPUT**
 
-When experimenting with analogue...
+When experimenting with analogue we used 
 
 *INSERT LIGHT DEPENDENT RESISITOR SCHEMATICS*
 
