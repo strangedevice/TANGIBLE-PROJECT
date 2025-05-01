@@ -32,8 +32,10 @@ void loop() {
   delay(1000);                      // wait for a second
 }
 ```
-
+[^1]
+This is video of an LED blinking in a continuous loop.
 *INSERT ARDUNIO LED OUTPUT VIDEO*
+
 ![Video of an LED blinking on a reapeted loop](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/VID_20250220_125439799.mp4)
 
 Another LED output program is a fade in which the LED will loop fading on and off:
@@ -78,3 +80,7 @@ When experimenting with analogue we used
 *INSERT LIGHT DEPENDENT RESISITOR SCHEMATICS*
 
 *INSERT POTENTIONMETER SCHEMATICS*
+
+**REFERENCES**
+
+[^1]: https://docs.arduino.cc/built-in-examples/basics/Blink/
