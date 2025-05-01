@@ -11,6 +11,8 @@ TANGIBLE DOCUMENTATION
 
 When experimenting with the digital output of the Arduino we used LEDs to show an output.
 
+This is a phyisically built LED output circuit:
+
 Here is a circuit diagram on a LED output.
 
 ![LED Schematics Diagram](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/LED_SCHEMATICS.jpg)
@@ -75,11 +77,15 @@ The digital LED output is very basic but could probably used in a multidude of w
 
 ### **ANALOGUE OUTPUT**
 
-When experimenting with analogue we used 
+When experimenting with analogue... A 
+
+Here is a circuit diagram of a light dependent resistor:
 
 *INSERT LIGHT DEPENDENT RESISITOR SCHEMATICS*
 
-*INSERT POTENTIONMETER SCHEMATICS*
+Here is a circuit diagram of a potentiometer:
+
+*INSERT POTENTIOMETER SCHEMATICS*
 
 ## **GAME DESIGN IDEAS**
 
