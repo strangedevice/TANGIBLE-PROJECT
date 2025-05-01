@@ -11,7 +11,7 @@ THIS IS A LIST OF THE EXPERIMENTS THAT WE DID IN CLASS
 
 When experimenting with the digital output of the Arduino we used LEDs to show an output.
 
-* *INSERT ARDUNIO LED OUTPUT SCHEMATICS DIAGRAM* *
+*INSERT ARDUNIO LED OUTPUT SCHEMATICS DIAGRAM*
 
 Here is some Blink code that will turn the LED on and off:
 
@@ -31,7 +31,7 @@ void loop() {
 }
 ```
 
-* *INSERT ARDUNIO LED OUTPUT VIDEO* *
+*INSERT ARDUNIO LED OUTPUT VIDEO*
 
 Another LED output program is a fade in which the LED will loop fading on and off:
 
