@@ -34,7 +34,7 @@ void loop() {
 ```
 
 *INSERT ARDUNIO LED OUTPUT VIDEO*
-![Video of an LED blinking on a reapeted loop]https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/IMG_20250220_125427151.jpg
+![Video of an LED blinking on a reapeted loop](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/VID_20250220_125439799.mp4)
 
 Another LED output program is a fade in which the LED will loop fading on and off:
 
