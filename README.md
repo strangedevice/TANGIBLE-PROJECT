@@ -82,9 +82,18 @@ The digital LED output is very basic but could probably used in a multidude of w
 When experimenting with analog... A 
 
 This is a basic physical built potentiometer and light dependent resistor
+
+Here is a physical circuit of a light dependent resistor:
+
+![Physical Light Dependent Resisitor circuit](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/1000009678.jpg)
+
 Here is a circuit diagram of a light dependent resistor:
 
 *INSERT LIGHT DEPENDENT RESISITOR SCHEMATICS*
+
+Here is a physical circuit of a potentiometer:
+
+*INSERT POTENTIOMETER PICTURE*
 
 Here is a circuit diagram of a potentiometer:
 
