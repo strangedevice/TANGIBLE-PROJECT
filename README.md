@@ -134,9 +134,17 @@ A servo can be used in a number of ways to precisly move an object such as robot
 ## **GAME DESIGN IDEAS**
 
 - ANY PREVIOUS GAME IDEAS
-- PENCIL DRAWINGS 
+- PENCIL DRAWINGS
+
+The final game project idea is a 3 player game in which an open eye will open and close the players will lose their lives if they're not holding the button down whilst the eye is looking at the player, when a player has lost a life the figure will stay down and that player will be out for the rest of the game. There will be 3 rounds with the timer getting quicker each time with the winner of the game being the last player standing.
+
+
 
 ## **TESTING**
+
+When it came to starting the project we started with making a button circuit as that will be the main way to play the game.
+
+![Button circuit test](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/1000010239.jpg)
 
 - TESTING IDEAS
 - CODE LISTINGS
