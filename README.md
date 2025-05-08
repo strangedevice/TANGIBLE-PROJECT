@@ -70,15 +70,16 @@ void loop() {
   delay(30);
 }
 ```
+[^2]
 
 *INSERT ARDUNIO LED FADE OUTPUT VIDEO*
 
 //Reflection on how this can be applicatied in games
-The digital LED output is very basic but could probably used in a multidude of ways such as it could be used as an health system turning of the LED when taken damage.
+The digital LED output is very basic but could probably used in a multidude of ways such as it could be used such as a health system turning off the LED when the player has taken damage.
 
-### **ANALOGUE**
+### **ANALOG**
 
-When experimenting with analogue... A 
+When experimenting with analog... A 
 
 This is a basic physical built potentiometer and light dependent resistor
 Here is a circuit diagram of a light dependent resistor:
@@ -105,10 +106,11 @@ Here is the basic physical circuit built of the servo sweep:
 
 //CODE FOR THE SERVO SWEEP
 
-There are also different analogue inputs to control a servo using a potentinmeter and a light dependent resistor.
+There are also different analog inputs to control a servo using a potentinmeter and a light dependent resistor.
 
 *INSERT THE SERVO BEING CONTOLLED BY A POTENTIOMETER AND LIGHT DEPENDENT RESISTOR*
 
+A servo can be used in a number of ways to precisly move an object such as robotic arms and RC vechiles.
 //CONCLUSION AND HOW THIS COULD POTENTIALLY BE APPLIED TO THE PROJECT
 
 ### **DIGITAL INTERFACING**
@@ -141,3 +143,4 @@ There are also different analogue inputs to control a servo using a potentinmete
 **REFERENCES**
 
 [^1]: https://docs.arduino.cc/built-in-examples/basics/Blink/
+[^2]: https://docs.arduino.cc/built-in-examples/basics/Fade/
