@@ -9,7 +9,7 @@ TANGIBLE DOCUMENTATION
 
 ### **DIGITAL OUTPUT**
 
-When experimenting with the digital output of the Arduino we used LEDs to show an output.
+When using digital outputs we can control the inputs being taken and precisly controlling the output we mainly used LEDs to show an output.
 
 This is a simple built LED output circuit:
 
@@ -38,7 +38,6 @@ void loop() {
 ```
 [^1]
 This is video of an LED blinking in a continuous loop.
-*INSERT ARDUNIO LED OUTPUT VIDEO*
 
 ![Video of an LED blinking on a reapeted loop](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/VID_20250220_125439799.mp4)
 
@@ -93,6 +92,28 @@ Here is a circuit diagram of a potentiometer:
 //How this can potentially be applied
 
 ### **SERVOS AND MOTION**
+
+A servo motor is a closed-loop system that uses precise position of its shaft to move to its final position.
+
+This is a basic circuit diagram that controls the servo sweep:
+
+*INSERT SERVO SWEEP SCHEMATICS*
+
+Here is the basic physical circuit built of the servo sweep:
+
+*INSERT THE SERVO SWEEP PICTURE*
+
+//CODE FOR THE SERVO SWEEP
+
+There are also different analogue inputs to control a servo using a potentinmeter and a light dependent resistor.
+
+*INSERT THE SERVO BEING CONTOLLED BY A POTENTIOMETER AND LIGHT DEPENDENT RESISTOR*
+
+//CONCLUSION AND HOW THIS COULD POTENTIALLY BE APPLIED TO THE PROJECT
+
+### **DIGITAL INTERFACING**
+
+### **WIRELESS COMMUNICATION**
 
 ## **GAME DESIGN IDEAS**
 
