@@ -99,11 +99,14 @@ Here is a circuit diagram of a potentiometer:
 
 *INSERT POTENTIOMETER SCHEMATICS*
 
+[^3]
+
 //How this can potentially be applied
 
 ### **SERVOS AND MOTION**
 
 A servo motor is a closed-loop system that uses precise position of its shaft to move to its final position.
+[^5]
 
 This is a basic circuit diagram that controls the servo sweep:
 
@@ -114,6 +117,8 @@ Here is the basic physical circuit built of the servo sweep:
 *INSERT THE SERVO SWEEP PICTURE*
 
 //CODE FOR THE SERVO SWEEP
+
+[^4]
 
 There are also different analog inputs to control a servo using a potentinmeter and a light dependent resistor.
 
@@ -153,3 +158,6 @@ A servo can be used in a number of ways to precisly move an object such as robot
 
 [^1]: https://docs.arduino.cc/built-in-examples/basics/Blink/
 [^2]: https://docs.arduino.cc/built-in-examples/basics/Fade/
+[^3]: https://docs.arduino.cc/built-in-examples/analog/AnalogInput/
+[^4]: https://docs.arduino.cc/learn/electronics/servo-motors/
+[^5]: https://howtomechatronics.com/how-it-works/how-servo-motors-work-how-to-control-servos-using-arduino/#google_vignette
