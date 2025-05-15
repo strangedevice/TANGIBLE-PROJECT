@@ -87,6 +87,10 @@ Here is a physical circuit of a light dependent resistor:
 
 ![Physical Light Dependent Resisitor circuit](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/1000009678.jpg)
 
+This is the output of the Light Dependent Resistor on a serial plotter:
+
+![Light Depedent Resistor Serial Plotter](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/SerialMonitorLightDependentResistor.mp4)
+
 Here is a circuit diagram of a light dependent resistor:
 
 *INSERT LIGHT DEPENDENT RESISITOR SCHEMATICS*
