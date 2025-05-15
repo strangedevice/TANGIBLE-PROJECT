@@ -72,7 +72,7 @@ void loop() {
 ```
 [^2]
 
-*INSERT ARDUNIO LED FADE OUTPUT VIDEO*
+![Fade Video](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/Fade%20Video.mp4)
 
 //Reflection on how this can be applicatied in games
 The digital LED output is very basic but could probably used in a multidude of ways such as it could be used such as a health system turning off the LED when the player has taken damage.
@@ -93,15 +93,21 @@ Here is a circuit diagram of a light dependent resistor:
 
 Here is a video of the Light Dependent Resistor:
 
-Here is a video showing the serial 
+![Video of the Light Dependent Resistor](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/LightDependentResistor%20Video.mp4)
+
+Here is a video showing the serial monitor
 
 Here is a physical potentiometer circuit:
 
 ![Physical Potentiometer](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/Potentiometer%20Circuit.jpg)
 
-Here is a physical circuit of a potentiometer:
+Here is a video of the potentiometer circuit:
 
-*INSERT POTENTIOMETER PICTURE*
+![Video of the Potentiometer](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/Potentionmeter%20Video.mp4)
+
+This is the serial monitor ouutput from the potentiometer:
+
+![Potentiometer Serial Monitor Output](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/PotentiometerSerialMonitor.mp4)
 
 Here is a circuit diagram of a potentiometer:
 
