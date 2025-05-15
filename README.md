@@ -93,7 +93,7 @@ This is the output of the Light Dependent Resistor on a serial plotter:
 
 Here is a circuit diagram of a light dependent resistor:
 
-*INSERT LIGHT DEPENDENT RESISITOR SCHEMATICS*
+![LIGHT DEPENDENT RESISTOR SCHEMATICS](PROJECT/blob/main/Pictures/LIGHTDEPENDENTRESISTOR_SCHEMATICS.png)
 
 Here is a video of the Light Dependent Resistor:
 
