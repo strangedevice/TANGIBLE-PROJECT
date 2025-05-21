@@ -115,7 +115,7 @@ This is the serial monitor ouutput from the potentiometer:
 
 Here is a circuit diagram of a potentiometer:
 
-*INSERT POTENTIOMETER SCHEMATICS*
+![Potentiometer Schematics](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/POTENTIOMETER_SCHEMATICS.png)
 
 [^3]
 
