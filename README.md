@@ -99,7 +99,9 @@ Here is a video of the Light Dependent Resistor:
 
 ![Video of the Light Dependent Resistor](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/LightDependentResistor%20Video.mp4)
 
-Here is a video showing the serial monitor
+Here is a video showing the serial monitor output from the Light Depenedent Resistor:
+
+![Light Dependent Resisitor of the Serial Monitor](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/SerialMonitorLightDependentResistor.mp4)
 
 Here is a physical potentiometer circuit:
 
@@ -119,6 +121,32 @@ Here is a circuit diagram of a potentiometer:
 
 [^3]
 
+Here is the code used to read the serial monitor/plotter with a light dependent resistor and potentiometer:
+
+```
+int sensorPin = A0;   // select the input pin for the potentiometer
+int ledPin = 13;      // select the pin for the LED
+int sensorValue = 0;  // variable to store the value coming from the sensor
+
+void setup() {
+  // declare the ledPin as an OUTPUT:
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  // read the value from the sensor:
+  sensorValue = analogRead(sensorPin);
+  // turn the ledPin on
+  digitalWrite(ledPin, HIGH);
+  // stop the program for <sensorValue> milliseconds:
+  delay(sensorValue);
+  // turn the ledPin off:
+  digitalWrite(ledPin, LOW);
+  // stop the program for <sensorValue> milliseconds:
+  delay(sensorValue);
+}
+```
+
 //How this can potentially be applied
 
 ### **SERVOS AND MOTION**
@@ -135,6 +163,30 @@ Here is the basic physical circuit built of the servo sweep:
 *INSERT THE SERVO SWEEP PICTURE*
 
 //CODE FOR THE SERVO SWEEP
+```
+#include <Servo.h>
+
+Servo myservo;  // create servo object to control a servo
+// twelve servo objects can be created on most boards
+
+int pos = 0;    // variable to store the servo position
+
+void setup() {
+  myservo.attach(9);  // attaches the servo on pin 9 to the servo object
+}
+
+void loop() {
+  for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
+    // in steps of 1 degree
+    myservo.write(pos);              // tell servo to go to position in variable 'pos'
+    delay(15);                       // waits 15ms for the servo to reach the position
+  }
+  for (pos = 180; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
+    myservo.write(pos);              // tell servo to go to position in variable 'pos'
+    delay(15);                       // waits 15ms for the servo to reach the positio
+  }
+}
+```
 
 [^4]
 
