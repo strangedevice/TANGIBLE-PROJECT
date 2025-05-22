@@ -315,7 +315,19 @@ A servo can be used in a number of ways to precisly move an object such as robot
 - ANY PREVIOUS GAME IDEAS
 - PENCIL DRAWINGS
 
-## GAME IDEA 1
+### GAME IDEA 1
+
+The concept of this game idea is that the 2 players would have sensors covering all over their bodies such as shoulders, knees and arms and you would hit the other player with a soft weapon that would hit the other players sensors adding a point everytime a player hits one of the sensors with a winning condition after a time period. This idea was rejected due to the complexity of the build.
+
+### GAME IDEA 2
+
+Another  game idea would be a shooter in which the player would shoot light from a toy gun and it would shine onto sensors for the player to gain a point using. The idea was rejected due to the difficulity level and its simularities to arcade games that are like that.
+
+### GAME IDEA 3
+
+Another game concept idea was a battle ships idea in which the the player would have to chase an enemy around a board to try and catch the enemy.
+
+### FINAL GAME IDEA 
 
 The final game project idea is a 3 player game in which an open eye will open and close the players will lose their lives if they're not holding the button down whilst the eye is looking at the player, when a player has lost a life the figure will stay down and that player will be out for the rest of the game. There will be 3 rounds with the timer getting quicker each time with the winner of the game being the last player standing.
 
