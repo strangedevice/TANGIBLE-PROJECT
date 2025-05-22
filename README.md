@@ -39,7 +39,7 @@ void loop() {
 [^1]
 This is video of an LED blinking in a continuous loop.
 
-![Video of an LED blinking on a reapeted loop](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/VID_20250220_125439799.mp4)
+This is a link to the LED Blink video: [https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/VID_20250220_125439799.mp4]
 
 Another LED output program is a fade in which the LED will loop fading on and off:
 
@@ -154,15 +154,15 @@ void loop() {
 A servo motor is a closed-loop system that uses precise position of its shaft to move to its final position.
 [^5]
 
-This is a basic circuit diagram that controls the servo sweep:
+This is a basic servo sweep circuit:
 
-*INSERT SERVO SWEEP SCHEMATICS*
+![SERVO SWEEP PHYSICAL](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/Serco%20Sweep.mp4)
 
-Here is the basic physical circuit built of the servo sweep:
+This is the schematics 
 
-*INSERT THE SERVO SWEEP PICTURE*
+![SERVO SWEEP SCHEMATICS](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/SERVO_SWEEP_SCHEMATICS.png)
 
-//CODE FOR THE SERVO SWEEP
+This was the code used for the servo sweep program:
 ```
 #include <Servo.h>
 
@@ -187,8 +187,11 @@ void loop() {
   }
 }
 ```
-
 [^4]
+
+This is a basic servo knob circuit using a potentiometer:
+
+![](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/Servo%20and%20Potentiometer%20Knob.mp4)
 
 There are also different analog inputs to control a servo using a potentinmeter and a light dependent resistor.
 
