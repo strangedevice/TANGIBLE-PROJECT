@@ -72,7 +72,7 @@ void loop() {
 ```
 [^2]
 
-![Fade Video](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/Fade%20Video.mp4)
+[FADE VIDEO](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/Fade%20Video.mp4)
 
 //Reflection on how this can be applicatied in games
 The digital LED output is very basic but could probably used in a multidude of ways such as it could be used such as a health system turning off the LED when the player has taken damage.
@@ -89,7 +89,7 @@ Here is a physical circuit of a light dependent resistor:
 
 This is the output of the Light Dependent Resistor on a serial plotter:
 
-![Light Depedent Resistor Serial Plotter](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/SerialMonitorLightDependentResistor.mp4)
+[LIGHT DEPENDENT RESISTOR PLOTTER](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/SerialMonitorLightDependentResistor.mp4)
 
 Here is a circuit diagram of a light dependent resistor:
 
