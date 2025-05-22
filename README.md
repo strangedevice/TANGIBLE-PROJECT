@@ -72,7 +72,7 @@ void loop() {
 ```
 [^2]
 
-[FADE VIDEO](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/Fade%20Video.mp4)
+This is a link to the LED Fade video: [FADE VIDEO](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/Fade%20Video.mp4)
 
 //Reflection on how this can be applicatied in games
 The digital LED output is very basic but could probably used in a multidude of ways such as it could be used such as a health system turning off the LED when the player has taken damage.
@@ -87,37 +87,31 @@ Here is a physical circuit of a light dependent resistor:
 
 ![Physical Light Dependent Resisitor circuit](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/1000009678.jpg)
 
-This is the output of the Light Dependent Resistor on a serial plotter:
-
-[LIGHT DEPENDENT RESISTOR PLOTTER](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/SerialMonitorLightDependentResistor.mp4)
-
 Here is a circuit diagram of a light dependent resistor:
 
 ![LIGHT DEPENDENT RESISTOR SCHEMATICS](PROJECT/blob/main/Pictures/LIGHTDEPENDENTRESISTOR_SCHEMATICS.png)
 
-Here is a video of the Light Dependent Resistor:
-
-![Video of the Light Dependent Resistor](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/LightDependentResistor%20Video.mp4)
+This is a link to the Light Dependent Resistor video: [Video of the Light Dependent Resistor](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/LightDependentResistor%20Video.mp4)
 
 Here is a video showing the serial monitor output from the Light Depenedent Resistor:
 
-![Light Dependent Resisitor of the Serial Monitor](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/SerialMonitorLightDependentResistor.mp4)
+This is a link to the Light Dependent Resistor Results on a serial plotter video: [Light Dependent Resisitor of the Serial Plotter](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/SerialMonitorLightDependentResistor.mp4)
 
 Here is a physical potentiometer circuit:
 
 ![Physical Potentiometer](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/Potentiometer%20Circuit.jpg)
 
+Here is a circuit diagram of a potentiometer:
+
+![POTENTIOMETER SCHEMATICS](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/POTENTIOMETER_SCHEMATICS.png)
+
 Here is a video of the potentiometer circuit:
 
-![Video of the Potentiometer](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/Potentionmeter%20Video.mp4)
+This is a link to the Potentiometer video: [Video of the Potentiometer](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/Potentionmeter%20Video.mp4)
 
 This is the serial monitor ouutput from the potentiometer:
 
-![Potentiometer Serial Monitor Output](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/PotentiometerSerialMonitor.mp4)
-
-Here is a circuit diagram of a potentiometer:
-
-![Potentiometer Schematics](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/POTENTIOMETER_SCHEMATICS.png)
+This is a link to the Potentiometer Serial Monitor Output video: [Potentiometer Serial Monitor Output](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/PotentiometerSerialMonitor.mp4)
 
 [^3]
 
@@ -162,6 +156,8 @@ This is the schematics
 
 ![SERVO SWEEP SCHEMATICS](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/SERVO_SWEEP_SCHEMATICS.png)
 
+This is a link to the Servo Sweep video: [Servo Sweep Video](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/Serco%20Sweep.mp4)
+
 This was the code used for the servo sweep program:
 ```
 #include <Servo.h>
@@ -191,11 +187,15 @@ void loop() {
 
 This is a basic servo knob circuit using a potentiometer:
 
-![](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/Servo%20and%20Potentiometer%20Knob.mp4)
+![SERVO POTENTIOMETER PHYSICAL DIAGRAM](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/Servo%20and%20Potentiometer.jpg)
+
+This is a basic servo knob schematic diagram:
+
+![SERVO POTENTIOMETER SCHEMATICS](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/SERVO_KNOB_SCHEMATICS.png)
 
 There are also different analog inputs to control a servo using a potentinmeter and a light dependent resistor.
 
-*INSERT THE SERVO BEING CONTOLLED BY A POTENTIOMETER AND LIGHT DEPENDENT RESISTOR*
+This is a link to the Servo Potentiometer Video: [Servo Potentiometer Video](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/Servo%20and%20Potentiometer%20Knob.mp4)
 
 A servo can be used in a number of ways to precisly move an object such as robotic arms and RC vechiles.
 //CONCLUSION AND HOW THIS COULD POTENTIALLY BE APPLIED TO THE PROJECT
