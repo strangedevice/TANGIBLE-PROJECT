@@ -5,11 +5,9 @@ TANGIBLE DOCUMENTATION
 
 ## **EXPERIMENTS**
 
-//THIS IS A LIST OF THE EXPERIMENTS THAT WE DID IN CLASS
-
 ### **DIGITAL OUTPUT**
 
-When using digital outputs we can control the inputs being taken and precisly controlling the output we mainly used LEDs to show an output.
+When using digital outputs we can control the inputs being taken and precisly control the digital output in which LEDs were mainly used to show an output.
 
 This is a simple built LED output circuit:
 
@@ -115,12 +113,11 @@ void loop() {
 
 This is a link to the LED Fade video: [FADE VIDEO](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/Fade%20Video.mp4)
 
-//Reflection on how this can be applicatied in games
 The digital LED output is very basic but could probably used in a multidude of ways such as it could be used such as a health system turning off the LED when the player has taken damage.
 
-### **ANALOG**
+### **ANALOG INPUT**
 
-When experimenting with analog... A 
+Analog can have a number of different inputs unlike a digital out outputs such as the light dependent resistor and the potentiometer whilst the digital output can only output a HIGH OR A LOW
 
 This is a basic physical built potentiometer and light dependent resistor:
 
@@ -302,6 +299,7 @@ void loop() {
   delay(15);                           // waits for the servo to get there
 }
 ```
+[^6]
 
 A servo can be used in a number of ways to precisly move an object such as robotic arms and RC vechiles.
 //CONCLUSION AND HOW THIS COULD POTENTIALLY BE APPLIED TO THE PROJECT
@@ -311,9 +309,6 @@ A servo can be used in a number of ways to precisly move an object such as robot
 ### **WIRELESS COMMUNICATION**
 
 ## **GAME DESIGN IDEAS**
-
-- ANY PREVIOUS GAME IDEAS
-- PENCIL DRAWINGS
 
 ### GAME IDEA 1
 
@@ -326,6 +321,8 @@ Another  game idea would be a shooter in which the player would shoot light from
 ### GAME IDEA 3
 
 Another game concept idea was a battle ships idea in which the the player would have to chase an enemy around a board to try and catch the enemy.
+
+### GAME IDEA 4
 
 ### FINAL GAME IDEA 
 
@@ -361,5 +358,7 @@ When it came to starting the project we started with making a button circuit as 
 [^1]: https://docs.arduino.cc/built-in-examples/basics/Blink/
 [^2]: https://docs.arduino.cc/built-in-examples/basics/Fade/
 [^3]: https://docs.arduino.cc/built-in-examples/analog/AnalogInput/
-[^4]: https://docs.arduino.cc/learn/electronics/servo-motors/
+[^4]: [https://docs.arduino.cc/learn/electronics/servo-motors/](https://www.arduino.cc/en/Tutorial/LibraryExamples/Sweep/)
 [^5]: https://howtomechatronics.com/how-it-works/how-servo-motors-work-how-to-control-servos-using-arduino/#google_vignette
+[^6]: https://www.arduino.cc/en/Tutorial/Knob/
+[^7]: https://www.allaboutcircuits.com/projects/using-the-arduinos-analog-io/
