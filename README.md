@@ -130,11 +130,9 @@ Here is a physical circuit of a light dependent resistor:
 
 Here is a circuit diagram of a light dependent resistor:
 
-![LIGHT DEPENDENT RESISTOR SCHEMATICS](PROJECT/blob/main/Pictures/LIGHTDEPENDENTRESISTOR_SCHEMATICS.png)
+![LIGHT DEPENDENT RESISTOR SCHEMATICS](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/LIGHTDEPENDENTRESISTOR_SCHEMATICS.png)
 
 This is a link to the Light Dependent Resistor video: [Video of the Light Dependent Resistor](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/LightDependentResistor%20Video.mp4)
-
-Here is a video showing the serial monitor output from the Light Depenedent Resistor:
 
 This is a link to the Light Dependent Resistor Results on a serial plotter video: [Light Dependent Resisitor of the Serial Plotter](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/SerialMonitorLightDependentResistor.mp4)
 
@@ -149,8 +147,6 @@ Here is a circuit diagram of a potentiometer:
 Here is a video of the potentiometer circuit:
 
 This is a link to the Potentiometer video: [Video of the Potentiometer](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/Potentionmeter%20Video.mp4)
-
-This is the serial monitor ouutput from the potentiometer:
 
 This is a link to the Potentiometer Serial Monitor Output video: [Potentiometer Serial Monitor Output](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/PotentiometerSerialMonitor.mp4)
 
@@ -219,11 +215,11 @@ void loop() {
 A servo motor is a closed-loop system that uses precise position of its shaft to move to its final position.
 [^5]
 
-This is a basic servo sweep circuit:
+This is a basic servo sweep physical circuit:
 
-![SERVO SWEEP PHYSICAL](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/Serco%20Sweep.mp4)
+![SERVO SWEEP PHYSICAL](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/Servo.jpg)
 
-This is the schematics 
+Here are the schematics of the servo sweep circuit:
 
 ![SERVO SWEEP SCHEMATICS](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/SERVO_SWEEP_SCHEMATICS.png)
 
@@ -269,7 +265,7 @@ This is a basic servo knob circuit using a potentiometer:
 
 ![SERVO POTENTIOMETER PHYSICAL DIAGRAM](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/Servo%20and%20Potentiometer.jpg)
 
-This is a basic servo knob schematic diagram:
+This is a basic servo knob schematic diagram using a potentiometer:
 
 ![SERVO POTENTIOMETER SCHEMATICS](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/SERVO_KNOB_SCHEMATICS.png)
 
