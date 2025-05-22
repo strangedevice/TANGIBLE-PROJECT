@@ -132,9 +132,9 @@ Here is a circuit diagram of a light dependent resistor:
 
 ![LIGHT DEPENDENT RESISTOR SCHEMATICS](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/LIGHTDEPENDENTRESISTOR_SCHEMATICS.png)
 
-This is a link to the Light Dependent Resistor video: [Video of the Light Dependent Resistor](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/LightDependentResistor%20Video.mp4)
+This is a link to the Light Dependent Resistor video: [LIGHT DEPENDENT RESISITOR VIDEO](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/LightDependentResistor%20Video.mp4)
 
-This is a link to the Light Dependent Resistor Results on a serial plotter video: [Light Dependent Resisitor of the Serial Plotter](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/SerialMonitorLightDependentResistor.mp4)
+This is a link to the Light Dependent Resistor Results on a serial plotter video: [LIGHT DEPENDENT RESISITORLight Dependent Resisitor of the Serial Plotter](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/SerialMonitorLightDependentResistor.mp4)
 
 Here is a physical potentiometer circuit:
 
