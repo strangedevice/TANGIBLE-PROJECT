@@ -318,6 +318,7 @@ A servo can be used in a number of ways to precisly move an object such as robot
 The final game project idea is a 3 player game in which an open eye will open and close the players will lose their lives if they're not holding the button down whilst the eye is looking at the player, when a player has lost a life the figure will stay down and that player will be out for the rest of the game. There will be 3 rounds with the timer getting quicker each time with the winner of the game being the last player standing.
 
 ![Game Concept Sketch](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/Game%20Concept.png)
+![Game Storyboard](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/STORYBOARD_FOR_OUTOFSIGHT.jpg)
 
 ## **TESTING**
 
