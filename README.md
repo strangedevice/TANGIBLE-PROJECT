@@ -61,7 +61,7 @@ void loop() {
 ```
 [^1]
 
-This is a link to the LED Blink video that will continuosly loop: [BLINK VIDEO](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/VID_20250220_125439799.mp4)
+This is a link to the LED [BLINK VIDEO](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/VID_20250220_125439799.mp4) that will continuosly loop
 
 Another LED output program is a fade in which the LED will loop fading on and off:
 
@@ -110,7 +110,7 @@ void loop() {
 ```
 [^2]
 
-This is a link to the LED Fade video: [FADE VIDEO](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/Fade%20Video.mp4)
+This is a link to the LED [FADE VIDEO](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/Fade%20Video.mp4)
 
 The digital LED output is very basic but could probably used in a multidude of ways such as it could be used such as a health system turning off the LED when the player has taken damage or could potentially be used as a sensor turning on if there was any motion detected.
 
@@ -128,23 +128,21 @@ Schematics:
 
 ![LIGHT DEPENDENT RESISTOR SCHEMATICS](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/LIGHTDEPENDENTRESISTOR_SCHEMATICS.png)
 
-This is a link to the [LIGHT DEPENDENT RESISITOR VIDEO](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/LightDependentResistor%20Video.mp4):
+This is a link to the [LIGHT DEPENDENT RESISITOR VIDEO](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/LightDependentResistor%20Video.mp4)
 
-This is a link to the Light Dependent Resistor Results on a serial plotter video: [LIGHT DEPENDENT RESISITORLight Dependent Resisitor of the Serial Plotter](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/SerialMonitorLightDependentResistor.mp4)
+This is a link to the results of the [LIGHT DEPENDENT RESISTOR SERIAL PLOTTER VIDEO](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/SerialMonitorLightDependentResistor.mp4)
 
 Here is a physical potentiometer circuit:
 
 ![Physical Potentiometer](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/Potentiometer%20Circuit.jpg)
 
-Here is a circuit diagram of a potentiometer:
+Schematics:
 
 ![POTENTIOMETER SCHEMATICS](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/POTENTIOMETER_SCHEMATICS.png)
 
-Here is a video of the potentiometer circuit:
+This is a link to the [POTENTIOMETER VIDEO](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/Potentionmeter%20Video.mp4)
 
-This is a link to the Potentiometer video: [Video of the Potentiometer](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/Potentionmeter%20Video.mp4)
-
-This is a link to the Potentiometer Serial Monitor Output video: [Potentiometer Serial Monitor Output](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/PotentiometerSerialMonitor.mp4)
+This is a link to the results of the [POTENTIOMETER SERIAL MONITOR OUTPUT VIDEO](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/PotentiometerSerialMonitor.mp4)
 
 [^3]
 
@@ -204,18 +202,18 @@ void loop() {
 
 ```
 
-//How this can potentially be applied
+Analog could be potentially used in our game as a sensor such as detecting the brightness or possibly used as an analog joystick for controlling the character or a robot.
 
 ### **SERVOS AND MOTION**
 
-A servo motor is a closed-loop system that uses precise position of its shaft to move to its final position.
+A servo motor is a closed-loop system that uses precise position of its shaft to a specific angle which is usually between 0° to 180°.
 [^5]
 
 This is a basic servo sweep physical circuit:
 
 ![SERVO SWEEP PHYSICAL](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/Servo.jpg)
 
-Here are the schematics of the servo sweep circuit:
+Schematics:
 
 ![SERVO SWEEP SCHEMATICS](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/SERVO_SWEEP_SCHEMATICS.png)
 
