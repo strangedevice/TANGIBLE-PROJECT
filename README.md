@@ -11,11 +11,11 @@ When using digital outputs we can control the inputs being taken and precisly co
 
 This is a simple built LED output circuit:
 
-![Physical LED circuit](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/IMG_20250220_125427151.jpg)
+![Physical LED circuit](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/IMG_20250220_125427151.jpg)![LED Schematics Diagram](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/LED_SCHEMATICS.jpg)
 
 Here is a circuit diagram on a LED output.
 
-![LED Schematics Diagram](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/LED_SCHEMATICS.jpg)
+
 
 Here is some Blink code that will turn the LED on and off though this code won't loop
 
