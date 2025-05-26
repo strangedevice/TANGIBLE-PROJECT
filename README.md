@@ -7,15 +7,15 @@ TANGIBLE DOCUMENTATION
 
 ### **DIGITAL OUTPUT**
 
-When using digital outputs we can control the inputs being taken and precisly control the digital output in which LEDs were mainly used to show an output.
+When using digital outputs we can control the inputs being taken and precisly control the digital output in which LEDs were mainly used to show an output by using a HIGH(5V) AND LOW(0V) signal.
 
 This is a simple built LED output circuit:
 
-![Physical LED circuit](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/IMG_20250220_125427151.jpg)![LED Schematics Diagram](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/LED_SCHEMATICS.jpg)
+![Physical LED circuit](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/IMG_20250220_125427151.jpg)
 
-Here is a circuit diagram on a LED output.
+Schematics:
 
-
+![LED Schematics Diagram](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/LED_SCHEMATICS.jpg)
 
 Here is some Blink code that will turn the LED on and off though this code won't loop
 
