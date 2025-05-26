@@ -425,8 +425,17 @@ void loop() {
   }
 }
 ```
+[^9]
 So bascially whenever a button is in a OPEN state it reads as LOW on the other hand when the button is in a CLOSED state its in a HIGH state with the 5V running through the circuit which will turn the light either ON or OFF.
 
+After making the button a servo was added onto the circuit as in our design ideas we had little figure which would go underneath the board 'hiding' from the eye when the button was held down.
+
+![BUTTON WITH SERVO](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/servo%20with%20button.jpg)
+
+Schematics:
+![BUTON WITH SERVO SCHEMATICS](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/BUTTON_SEVO_SCHEMATICS.png)
+
+This is a link to the [SERVO WITH BUTOTN VIDEO](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/button%20and%20servo.mp4)
 
 - TESTING IDEAS
 - CODE LISTINGS
@@ -454,3 +463,4 @@ So bascially whenever a button is in a OPEN state it reads as LOW on the other h
 [^6]: https://www.arduino.cc/en/Tutorial/Knob/
 [^7]: https://www.allaboutcircuits.com/projects/using-the-arduinos-analog-io/
 [^8]: https://learn.adafruit.com/adafruit-neopixel-uberguide?view=all
+[^9]: https://docs.arduino.cc/built-in-examples/digital/Button/
