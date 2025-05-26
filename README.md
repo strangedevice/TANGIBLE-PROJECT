@@ -112,7 +112,7 @@ void loop() {
 
 This is a link to the LED Fade video: [FADE VIDEO](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/Fade%20Video.mp4)
 
-The digital LED output is very basic but could probably used in a multidude of ways such as it could be used such as a health system turning off the LED when the player has taken damage.
+The digital LED output is very basic but could probably used in a multidude of ways such as it could be used such as a health system turning off the LED when the player has taken damage or could potentially be used as a sensor turning on if there was any motion detected.
 
 ### **ANALOG INPUT**
 
