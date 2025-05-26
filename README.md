@@ -217,7 +217,7 @@ Schematics:
 
 ![SERVO SWEEP SCHEMATICS](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/SERVO_SWEEP_SCHEMATICS.png)
 
-This is a link to the Servo Sweep video: [Servo Sweep Video](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/Serco%20Sweep.mp4)
+This is a link to the [SERVO SWEEP VIDEO](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/Serco%20Sweep.mp4)
 
 This was the code used for the servo sweep program:
 ```
@@ -255,17 +255,19 @@ void loop() {
 ```
 [^4]
 
+This demonstrates that the shaft of the servo cna turn a full 0° to 180° 
+
 This is a basic servo knob circuit using a potentiometer:
 
 ![SERVO POTENTIOMETER PHYSICAL DIAGRAM](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/Servo%20and%20Potentiometer.jpg)
 
-This is a basic servo knob schematic diagram using a potentiometer:
+Schematics:
 
 ![SERVO POTENTIOMETER SCHEMATICS](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/SERVO_KNOB_SCHEMATICS.png)
 
-There are also different analog inputs to control a servo using a potentinmeter and a light dependent resistor.
+There are also different analog inputs to control a servo using a potentinmeter and a light dependent resistor this demonstrates the servo moving by using a potentiometer.
 
-This is a link to the Servo Potentiometer Video: [Servo Potentiometer Video](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/Servo%20and%20Potentiometer%20Knob.mp4)
+This is a link to the [SERVO KNOB USING A POTENTIOMETER VIDEO](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/Servo%20and%20Potentiometer%20Knob.mp4)
 
 This was the code used for the servo knob program:
 ```
@@ -298,12 +300,13 @@ void loop() {
 ```
 [^6]
 
+This demonstrates the use of the servo can be controlled to rotate it's arm to a specific angle.
+
 A servo can be used in a number of ways to precisly move an object such as robotic arms and RC vechiles.
-//CONCLUSION AND HOW THIS COULD POTENTIALLY BE APPLIED TO THE PROJECT
 
 ### **DIGITAL INTERFACING**
 
-### **WIRELESS COMMUNICATION**
+Digital interfaing is very simular to digital outputs which only have two states still being on and off normally used for displaying.
 
 ## **GAME DESIGN IDEAS**
 
