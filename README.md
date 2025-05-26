@@ -437,6 +437,38 @@ Schematics:
 
 This is a link to the [SERVO WITH BUTOTN VIDEO](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/button%20and%20servo.mp4)
 
+Here is some code that we used to get the servo to move with the button:
+```
+int button = 2;   //pin of the button
+#include<Servo.h> //include the servo library
+Servo servo;  //create a servo object
+int pos = 0;  //initial position of the servo
+void  setup() {
+  // put your setup code here, to run once:
+  servo.attach(3);  //pin  used by the servo
+  pinMode(button, INPUT_PULLUP);  //define button as  input pullup
+  /*
+  INPUT_PULLUP send to arduino LOW signal, so, when you press  the button, you send a LOW signal to arduino
+  */
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  if (digitalRead(button) ==  LOW) { //if Value read of the button ==LOW:
+    pos++;  //increases the value  of the "pos" variable each time the push button of the left is pressed
+    delay(5);  //5 milliseconds of delay
+    servo.write(pos); //servo goes to variable pos
+  }
+  if (digitalRead(button) == HIGH) { //if Value read of the button ==HIGH
+    pos--;  //decreases the value of the "pos" variable each time the push button  of the right is pressed
+    delay(5); //5 milliseconds of delay
+    servo.write(pos);  //servo goes to variable pos
+  }
+}
+```
+[^10]
+This will basically move the sevo shaft side to side depending on the button state. Sadly this idea was scrapped due to time constraints.
+
 - TESTING IDEAS
 - CODE LISTINGS
 - CIRCUIT DIAGRAMS
@@ -464,3 +496,4 @@ This is a link to the [SERVO WITH BUTOTN VIDEO](https://github.com/CaNi31/TANGIB
 [^7]: https://www.allaboutcircuits.com/projects/using-the-arduinos-analog-io/
 [^8]: https://learn.adafruit.com/adafruit-neopixel-uberguide?view=all
 [^9]: https://docs.arduino.cc/built-in-examples/digital/Button/
+[^10]: https://projecthub.arduino.cc/bruno_opaiva/controling-servo-motors-with-buttons-and-arduino-bcb3b6
