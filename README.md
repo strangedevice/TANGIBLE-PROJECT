@@ -116,7 +116,7 @@ The digital LED output is very basic but could probably used in a multidude of w
 
 ### **ANALOG INPUT**
 
-Analog can have a number of different inputs unlike a digital out outputs such as the light dependent resistor and the potentiometer whilst the digital output can only output a HIGH OR A LOW
+Analog can have a range of different inputs unlike a digital outputs which are either a ON OR OFF. Analog on the other hand can read sensors such as the light dependent resistor.
 
 This is a basic physical built potentiometer and light dependent resistor:
 
