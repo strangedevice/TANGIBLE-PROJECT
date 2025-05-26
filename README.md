@@ -60,9 +60,8 @@ void loop() {
 }
 ```
 [^1]
-This is video of an LED blinking in a continuous loop.
 
-This is a link to the LED Blink video: [BLINK VIDEO](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/VID_20250220_125439799.mp4)
+This is a link to the LED Blink video that will continuosly loop: [BLINK VIDEO](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/VID_20250220_125439799.mp4)
 
 Another LED output program is a fade in which the LED will loop fading on and off:
 
