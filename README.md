@@ -118,13 +118,13 @@ The digital LED output is very basic but could probably used in a multidude of w
 
 Analog can have a range of different inputs unlike a digital outputs which are either a ON OR OFF. Analog on the other hand can read sensors such as the light dependent resistor.
 
-This is a basic physical built potentiometer and light dependent resistor:
+The following examples will show a circuit using a light dependent resistor and one using a potentiometer:
 
 Here is a physical circuit of a light dependent resistor:
 
 ![Physical Light Dependent Resisitor circuit](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/1000009678.jpg)
 
-Here is a circuit diagram of a light dependent resistor:
+Schematics:
 
 ![LIGHT DEPENDENT RESISTOR SCHEMATICS](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/LIGHTDEPENDENTRESISTOR_SCHEMATICS.png)
 
