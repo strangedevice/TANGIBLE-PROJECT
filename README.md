@@ -308,6 +308,38 @@ A servo can be used in a number of ways to precisly move an object such as robot
 
 Digital interfaing is very simular to digital outputs which only have two states still being on and off normally used for displaying.
 
+This is the bgasic schematics of the LED strip:
+
+![DIGITAL INTERFACING SCHEMATICS](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/LEDSTRIP_SCHEMATICS.png)
+
+This is the code used for the LED strip:
+```
+#include <Adafruit_NeoPixel.h>
+
+#define LED_PIN 6
+#define LED_COUNT 16
+
+Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_RGBW + NEO_KHZ800);
+
+void setup() {
+  strip.begin();           
+  strip.show();            
+  strip.setBrightness(50); 
+}
+void loop() {
+  strip.setPixelColor(16, 255, 0, 255, 0);
+  strip.show();
+    delay(50);
+}
+```
+[^8]
+
+This displaying a full colour on the strip.
+
+This is a link to the [LED STRIP VIDEO](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/digital%20interface.mp4)
+
+How this could potentially be applied to the project in simiular ways to the digital output by something triggering it such as a button to turn on the LED.
+
 ## **GAME DESIGN IDEAS**
 
 ### GAME IDEA 1
@@ -322,14 +354,13 @@ Another  game idea would be a shooter in which the player would shoot light from
 
 Another game concept idea was a battle ships idea in which the the player would have to chase an enemy around a board to try and catch the enemy.
 
-### GAME IDEA 4
-
 ### FINAL GAME IDEA 
 
 The final game project idea is a 3 player game in which an open eye will open and close the players will lose their lives if they're not holding the button down whilst the eye is looking at the player, when a player has lost a life the figure will stay down and that player will be out for the rest of the game. There will be 3 rounds with the timer getting quicker each time with the winner of the game being the last player standing.
 
 ![Game Concept Sketch](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/Game%20Concept.png)
 ![Game Storyboard](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/STORYBOARD_FOR_OUTOFSIGHT.jpg)
+Storyboard on roughly how the game will be played out
 
 ## **TESTING**
 
@@ -362,3 +393,4 @@ When it came to starting the project we started with making a button circuit as 
 [^5]: https://howtomechatronics.com/how-it-works/how-servo-motors-work-how-to-control-servos-using-arduino/#google_vignette
 [^6]: https://www.arduino.cc/en/Tutorial/Knob/
 [^7]: https://www.allaboutcircuits.com/projects/using-the-arduinos-analog-io/
+[^8]: https://learn.adafruit.com/adafruit-neopixel-uberguide?view=all
