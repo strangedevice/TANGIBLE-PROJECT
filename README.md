@@ -469,6 +469,14 @@ void loop() {
 [^10]
 This will basically move the sevo shaft side to side depending on the button state. Sadly this idea was scrapped due to time constraints.
 
+Later we found a better more easier to use push button than before which were some arcade buttons.
+
+![ARCADE BUTTONS](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/arcade_button.jpg)
+
+Schematics: ...
+
+ARCADE BUTTON CODE
+
 - TESTING IDEAS
 - CODE LISTINGS
 - CIRCUIT DIAGRAMS
