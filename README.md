@@ -475,15 +475,278 @@ Later we found a better more easier to use push button than before which were so
 
 Schematics: ...
 
-ARCADE BUTTON CODE
+After, finishing off the buttons for we moved onto adding a speaker into the game to let the player know when they have failed to press the button in time.
 
-- TESTING IDEAS
-- CODE LISTINGS
-- CIRCUIT DIAGRAMS
+![SPEAKER](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/speaker.jpg)
+
+Schematics: ...
+
+This is a link to the [SPEAKER VIDEO](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/speaker%20video.mp4)
+
+Here is some basic speaker code we to test out how a speaker works.
+```
+void setup() {
+
+  int SpeakerPin = 9; //DEFINE SPEAKER PIN NUMBER
+  pinMode(SpeakerPin, OUTPUT);
+}
+void loop()
+{
+  tone(SpeakerPin, 440, 1000); //(PIN NUMBER, FREQUENCY, TIME)
+  delay(1000)
+}
+```
+[^11]
+This code will simply make a tone in a loop.
+
+Now that we had two seperate circuits and decided to combine the both together.
+
+![ARCADE BUTTON & SPEAKER](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/button%20and%20speaker.jpg)
+
+Schematics: ...
+
+```
+int buttonPin = 2;   // button input
+int buzzerPin = 9;   // buzzer input
+
+int buttonState = 0; // checks if the button is pressed
+
+void setup() {
+  pinMode(buttonPin, INPUT);    // set button as input
+  pinMode(buzzerPin, OUTPUT);   // set buzzer as output
+}
+
+void loop() {
+  buttonState = digitalRead(buttonPin);   // checks the button
+
+  if (buttonState == HIGH) {
+    digitalWrite(buzzerPin, HIGH);  // turn on buzzer
+    delay(500);                     // wait half a second
+    digitalWrite(buzzerPin, LOW);   // turn off buzzer
+    delay(200);                     // stops it from repeating too fast
+  }
+}
+```
+This is some code that when a button state changes the buzzer will either turn on or off.
+
+We then wanted to get started with adding a LED for the eye as building a robotic eye was way beyond our skill level. Though we did run into a bit of a problem when it came to the LED which was mainly code related due to the NeoIxel product name being spelt differently.
+
+This is a link to the [NEOPIXEL RING NOT WORKING](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/not%20working%20LED_Ring.mp4)
+
+The improved NeoPixel Ring now working:
+
+![WORKING NEOPIXEL ADAFRUIT RING](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/WORKING%20LED.jpg)
+
+Schematics: ...
+
+Here is the working code for the LED Ring
+```
+#include <Adafruit_NeoPixel.h>
+
+#define LED_PIN 6 //OUTPUT PIN
+#define LED_COUNT 16 //LED COUNT
+
+Adafruit_NeoPixel ring(LED_COUNT, LED_PIN, NEO_RGBW + NEO_KHZ800);
+
+void setup() {
+  ring.begin();           
+  ring.show();            
+  ring.setBrightness(50); 
+}
+void loop() {
+  for(int i = 0; i < ring.numPixels(); i++){
+    ring.setPixelColor(i, 0, 0, 255, 0); //SHOW ONE COLOUR WHICH IS BLUE
+    ring.show();
+    delay(50);
+  }
+}
+```
+This code will display a full colour on the LED ring.
+
+Then we decided to combine the LED ring, speaker and the arcade buttons together to basically complete the circuit.
+
+![BUTTONS AND LED](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/3%20buttons.jpg)
+
+![FINISHED CIRCUIT](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/FINAL%20CIRCUIT.jpg)
+
+Schematics: ...
+
+Now that the circuit is basically complete we now mainly have to code the system with the basic gameplay loop being when the colour that the eye shows that player will press their button repeating that loop until there are no players left.
+
+```
+//CONSTANTS
+const int buttonPin = 2; //BUTTON INPUT PIN
+const int LEDPin = 13; //LED PIN
+const int buzzerPin = 9; //BUZZER PIN
+
+//VARIABLES
+int buttonState = 0; //BUTTON STATE VARIABLE
+int lifeCount = 3; //PLAYER LIVES
+unsigned long randomTime; //RANDOM LED TIME
+
+void setup() {
+  pinMode(buttonPin, INPUT);
+  pinMode(eyePin, OUTPUT);
+  pinMode(buzzerPin, OUTPUT);
+```
+
+We began with what constants and variables that we might need in the project
+
+```
+void loop() {
+  randomTime = random(2000, 5000);  //RANDOM TIME BETWEEN 2 TO 5 SECONDS
+
+  delay(randomTime); //RANDOM DELAY FOR THE LED TO TURN ON
+
+  digitalWrite(LEDPin, HIGH); //TURN ON LED
+
+  //CHECK IF THE BUTTON WAS PRESSED
+  unsigned long startMillis = millis();
+  while (millis() - startMillis < 2000) { //2 SECOND REACTION TIME
+    buttonState = digitalRead(buttonPin);
+    if (buttonState == HIGH) {
+      //CHECK IF THE PLAYER PRESSED THE BUTTON IN TIME
+      digitalWrite(LEDPin, LOW); //LED OFF
+      Serial.println("Player avoided being seen!");
+      return;  //ROUND END NEW ROUND BEGIN
+    }
+  }
+  //CHECK IF PLAYER PRESSED BUTTON IF NOT RUN THIS
+  if (buttonState == LOW) {
+    digitalWrite(LEDPin, LOW); //LED OFF
+    lifeCount--; //LIFE GONE
+    tone(buzzerPin, 1000, 500);  //SPEAKER FOR FEEDBACK
+    Serial.println("Player lost a life!");
+  }
+
+  //CHECK IF PLAYER HAS LOST ALL OF THEIR LIVES IF SO END GAME
+  if (lifeCount <= 0) {
+    gameOver();
+  }
+}
+```
+We then began to write out the main piece of the program what this code basically does is it'll wait for a random amount of time for the LED to turn on it'll then check if you pressed it in the reaction window checking by outputting in the serial monitor. With the addition of a check to see whether the player has pressed the button or not and a check when a player has lost all of their lives to end the game.
+
+Though at the moment we don't currently have a check for if another player presses their button outside of their turn or a way to restart the game yet with the addition of the LED ring.
+
+```
+#include <Adafruit_NeoPixel.h>
+const int LEDPin = 6;
+
+Adafruit_NeoPixel pixels(numLeds, neoPixelPin, NEO_GRBW + NEO_KHZ800);
+
+uint32_t playerColors[3] = {
+  pixels.Color(255, 0, 0),   //RED PLAYER 1
+  pixels.Color(0, 255, 0),   //GREEN PLAYER 2
+  pixels.Color(0, 0, 255)    //BLUE PLAYER 3
+};
+```
+This is the basic set-up that the LED ring will be using displaying a different colour for each player.
+
+Now that the LED has been setup we want to now dispay the player colour when a random player gets selected by the program
+
+```
+void showPlayerColor(int player) { //DISPLAY PLAYER RANDOM COLOUR
+  pixels.clear();
+  for (int i = 0; i < numLeds; i++) {
+    pixels.setPixelColor(i, playerColors[player]); //SET TO CURRENT PLAYER COLOUR
+  }
+  pixels.show();
+}
+```
+
+Now we need a proper winning and lossing state for the game
+
+```
+//CHECK THE CURRENT PLAYER COUNT
+int countActivePlayers() {
+  int count = 0;
+  for (int i = 0; i < numPlayers; i++) {
+    if (isAlive[i]) count++;
+  }
+  return count;
+}
+
+//ANNOUNCE THE WINNING PLAYER
+void announceWinner() {
+  for (int i = 0; i < numPlayers; i++) {
+    if (isAlive[i]) {
+      Serial.print("Player "); //DEBUG FOR THE SERIAL MONITOR TO CHECK THAT IT'S WORKING AS INTEDED
+      Serial.print(i + 1);
+      Serial.println(" wins!");
+      flashWinnerColor(i);
+      break;
+    }
+  }
+}
+
+//DISPLAY WINNER COLOUR
+void flashWinnerColor(int player) {
+  for (int j = 0; j < 6; j++) {
+    pixels.clear();
+    pixels.show();
+    delay(300);
+    for (int i = 0; i < numLeds; i++) {
+      pixels.setPixelColor(i, playerColors[player]);
+    }
+    pixels.show();
+  }
+}
+```
+
+This is a lot of the main program done now all is really needed is to add some additional checks with the buttons being pressed and possibly a way to restart the game.
+
+```
+if (pressedInTime) //IF THE PLAYER PRESSED THE CORRECT BUTTON
+  {
+    Serial.print("Player ");
+    Serial.print(chosenPlayer + 1);
+    Serial.println(" survived.");
+    tone(9, 160, 50); //TONE TO SIGNAL A NEW ROUND HAS STARTED/SUCCESS
+  } else //PLAYER WILL LOSE A LIFE IF THEY MISS THE BUTTON
+  {
+    lives[chosenPlayer]--;
+    Serial.print("Player ");
+    Serial.print(chosenPlayer + 1);
+    Serial.print(" missed! Lives left: ");
+    Serial.println(lives[chosenPlayer]);
+
+    if (lives[chosenPlayer] <= 0) //IF A PLAYERS LIFE HAS REACHED 0 THEN THEY ARE ELIMINATED
+    {
+      isAlive[chosenPlayer] = false;
+      Serial.print("Player ");
+      Serial.print(chosenPlayer + 1);
+      Serial.println(" eliminated!");
+    }
+
+    tone(9, 80, 300); //UNSUCCESSFUL TONE
+  }
+
+//WAIT FOR ANY PLAYER TO RESTART THE GAME BY PRESSING ANY OF THE BUTTONS
+void waitForRestart() 
+{
+  Serial.println("Press any button to restart...");
+  while (true) 
+  {
+    for (int i = 0; i < numPlayers; i++) 
+    {
+      if (digitalRead(buttonPins[i]) == LOW) 
+      {
+        Serial.println("Restarting...");
+        delay(1000);
+        return;
+      }
+    }
+  }
+}
+```
+This is a more cleaned up version of the results from each round with the additon of checking if a different player pressed the button instead of the chosen player with the addition of a successful tone and now a way to restart the game.
+
+[THIS IS A LINK TO A DEMONSTRATION OF THE GAME BEING CARRIED OUT](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/FINAL%20CIRCUIT.jpg)
 
 ## **TECHNICAL DOCUMENTATION**
 
-- FINAL CIRCUIT DIAGRAMS AND CODE 
+
 
 ## **MANUAL**
 
@@ -492,6 +755,8 @@ ARCADE BUTTON CODE
 - HEALTH AND SAFETY WARNINGS
 
 ## **PLAYTESTING**
+
+An in-depth evaluation, for example discussing playability, engagement, and ideas for improvement. The evaluation must comment on the game's accessibility, and how any identified accessibility issues might be addressed
 
 **REFERENCES**
 
@@ -505,3 +770,4 @@ ARCADE BUTTON CODE
 [^8]: https://learn.adafruit.com/adafruit-neopixel-uberguide?view=all
 [^9]: https://docs.arduino.cc/built-in-examples/digital/Button/
 [^10]: https://projecthub.arduino.cc/bruno_opaiva/controling-servo-motors-with-buttons-and-arduino-bcb3b6
+[^11]: https://docs.arduino.cc/language-reference/en/functions/advanced-io/tone/
