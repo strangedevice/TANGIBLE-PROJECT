@@ -369,6 +369,7 @@ When it came to starting the project we started with making a button circuit as 
 ![Button circuit test](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/1000010239.jpg)
 
 Schematics of the button:
+
 ![BUTTON SCHEMATICS](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/BUTTON_SCHEMATICS.png)
 
 This is the code that was used for the button:
@@ -433,6 +434,7 @@ After making the button a servo was added onto the circuit as in our design idea
 ![BUTTON WITH SERVO](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/servo%20with%20button.jpg)
 
 Schematics:
+
 ![BUTON WITH SERVO SCHEMATICS](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/BUTTON_SEVO_SCHEMATICS.png)
 
 This is a link to the [SERVO WITH BUTOTN VIDEO](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/button%20and%20servo.mp4)
@@ -981,9 +983,43 @@ void startGame()
 [^12] [^13] [^14] [^15] [^16] [^17] [^18]
 ## **MANUAL**
 
-- HOW TO OPERATE THE GAME
-- RULES OF THE GAME
-- HEALTH AND SAFETY WARNINGS
+**HOW TO OPERATE THE GAME**
+
+- How to operate the game 
+
+- Press any button to start 
+
+- Press the corresponding colour to the LED colour 
+
+- Continue to press until the success buzzer goes off 
+
+- Continue until the game ends 
+
+- Press any button to restart 
+
+- 3 players but can be player solo to see how long you can last
+
+**RULES OF THE GAME**
+
+- Each player has 3 lives 
+
+- Press your button when the LED matches the colour
+
+- If you fail to press your button in time you will lose a life
+
+- Don't press your colour outside of your turn or you will lose a life
+
+- Keep going until the last player remains 
+
+- The LED will flash the colour of the winning player 
+
+**HEALTH AND SAFETY**
+
+- Don't push down on the buttons to hard 
+
+- Don’t touch the LED or the wiring may come out
+
+- Don't mess with the wires or move the box around too much
 
 ## **PLAYTESTING**
 
@@ -992,7 +1028,9 @@ void startGame()
 [THIS IS A LINK TO PART 3 OF THE PLAYTEST](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/PLAYTEST_3.mov)
 [THIS IS A LINK TO PART 4 OF THE PLAYTEST](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/PLAYTEST_4.mov)
 
-An in-depth evaluation, for example discussing playability, engagement, and ideas for improvement. The evaluation must comment on the game's accessibility, and how any identified accessibility issues might be addressed
+## **EVALUATION**
+
+The game is on a base level is playable with a few setbacks such as sometimes the buttons can be pretty unresponsive such as the blue button in particular working on occasion and sometimes the other buttons require multiple presses to recogonise the input. It's not the most engaging game for a short while pressing buttons and seeing a colour can be engaing for a bit but long term not so much. Adding in previous rejected ideas such as the figures going under the board to make the visuals more intresting and maybe an actual robotic eye. It's very small so it's easy to carry around but it probably isn't the most accessible to colour blind people.
 
 **REFERENCES**
 
