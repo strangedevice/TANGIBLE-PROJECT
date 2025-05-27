@@ -308,7 +308,7 @@ A servo can be used in a number of ways to precisly move an object such as robot
 
 Digital interfaing is very simular to digital outputs which only have two states still being on and off normally used for displaying.
 
-This is the bgasic schematics of the LED strip:
+This is the basic schematics of the LED strip:
 
 ![DIGITAL INTERFACING SCHEMATICS](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/LEDSTRIP_SCHEMATICS.png)
 
@@ -433,7 +433,7 @@ After making the button a servo was added onto the circuit as in our design idea
 
 ![BUTTON WITH SERVO](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/servo%20with%20button.jpg)
 
-Schematics:
+Schematics of the button and servo:
 
 ![BUTON WITH SERVO SCHEMATICS](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/BUTTON_SEVO_SCHEMATICS.png)
 
@@ -475,13 +475,17 @@ Later we found a better more easier to use push button than before which were so
 
 ![ARCADE BUTTONS](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/arcade_button.jpg)
 
-Schematics: ...
+Schematic of the arcade button:
+
+![ARCADE SCHEMATIC](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/ARCADE_SCHEMATIC.jpg)
 
 After, finishing off the buttons for we moved onto adding a speaker into the game to let the player know when they have failed to press the button in time.
 
 ![SPEAKER](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/speaker.jpg)
 
-Schematics: ...
+Schematics for the speaker:
+
+![SPEAKER SCHEMATICS](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/SPEAKER_SCHEMATIC.jpg)
 
 This is a link to the [SPEAKER VIDEO](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/speaker%20video.mp4)
 
@@ -505,7 +509,8 @@ Now that we had two seperate circuits and decided to combine the both together.
 
 ![ARCADE BUTTON & SPEAKER](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/button%20and%20speaker.jpg)
 
-Schematics: ...
+Schematic of the arcade button and speaker:
+![ARCADE BUTTON AND SPEAKER](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/ARCADE_SPEAKER_SCHEMATIC.jpg)
 
 ```
 int buttonPin = 2;   // button input
@@ -539,7 +544,9 @@ The improved NeoPixel Ring now working:
 
 ![WORKING NEOPIXEL ADAFRUIT RING](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/WORKING%20LED.jpg)
 
-Schematics: ...
+Schematics for the NeoPixel LED Ring:
+
+![NEOPIXEL LED RING SCHEMATIC](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/LED_RING%20SCHEMATIC.png)
 
 Here is the working code for the LED Ring
 ```
@@ -751,6 +758,8 @@ This is a more cleaned up version of the results from each round with the addito
 ![FINAL PROJECT](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/FINAL.jpg)
 
 **SCHEMATICS**
+
+![FINAL SCHEMATIC](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/FINAL_SCHEMATIC.jpg)
 
 **CODE**
 
