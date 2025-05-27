@@ -569,8 +569,6 @@ Then we decided to combine the LED ring, speaker and the arcade buttons together
 
 ![FINISHED CIRCUIT](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/FINAL%20CIRCUIT.jpg)
 
-Schematics: ...
-
 Now that the circuit is basically complete we now mainly have to code the system with the basic gameplay loop being when the colour that the eye shows that player will press their button repeating that loop until there are no players left.
 
 ```
@@ -746,8 +744,241 @@ This is a more cleaned up version of the results from each round with the addito
 
 ## **TECHNICAL DOCUMENTATION**
 
+**PICTURE**
 
+![FINAL PROJECT](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Pictures/FINAL.jpg)
 
+**SCHEMATICS**
+
+**CODE**
+
+This is the final cleaned up code.
+
+```
+#include <Adafruit_NeoPixel.h>
+
+//PIN ASSIGNMENTS
+const int neoPixelPin = 6;
+const int buttonPins[3] = {2, 3, 4}; //PINS FOR THE BUTTONS FOR PLAYER 1, 2, 3
+const int buzzerPin = 9;
+
+//CONSTANT VARIABLES
+const int numPlayers = 3; //TOTAL PLAYER COUNT
+const int numLeds = 16; //NUMBER OF LEDS IN THE NEOPIXEL
+const int maxLives = 3; //LIFE COUNT FOR EACH PLAYER
+
+//NEOPIXEL
+Adafruit_NeoPixel pixels(numLeds, neoPixelPin, NEO_GRBW + NEO_KHZ800);
+
+uint32_t playerColors[3] = 
+{
+  pixels.Color(255, 0, 0),   //PLAYER 1 - RED
+  pixels.Color(0, 255, 0),   //PLAYER 2 - GREEN
+  pixels.Color(0, 0, 255)    //PLAYER 3 - BLUE
+};
+
+//PLAYER
+int lives[numPlayers]; //TRACKS THE PLAYERS LIVES
+bool isAlive[numPlayers]; //TRACKS IF THE PLAYER IS STILL IN THE GAME
+
+void setup() 
+{
+  Serial.begin(9600); //START THE SERIAL MONITOR FOR DEBUGGING
+  pixels.setBrightness(80); // BRIGHTNESS OF THE LED
+  pixels.begin(); //START THE LED RING
+  pixels.clear();
+  pixels.show();
+
+  for (int i = 0; i < numPlayers; i++) 
+  {
+    pinMode(buttonPins[i], INPUT_PULLUP); //BUTTON SETUP
+  }
+
+  pinMode(buzzerPin, OUTPUT);
+
+  startGame();
+}
+
+void loop() {
+  //MAIN GAME LOOP
+  //CHECK IF THERE IS ONLY ONE PLAYER OR NONE ALIVE
+  if (countActivePlayers() <= 1) 
+  {
+    announceWinner();
+    waitForRestart();      //WAIT FOR THE BUTTON THE RESTART
+    startGame();           //START GAME
+    return;
+  }
+
+  int chosenPlayer = selectRandomAlivePlayer(); //PICK A RANDOM PLAYER
+ 
+  Serial.print("Eye is watching Player ");
+  Serial.println(chosenPlayer + 1);
+
+  showPlayerColor(chosenPlayer); //DISPLAY THE PLAYER COLOUR
+  delay(random(1000, 1500)); //RANDOM DELAY BEFORE ALLOWING INPUT
+
+  unsigned long startMillis = millis();
+  bool pressedInTime = false;
+
+  //REACTION WINDOW
+  while (millis() - startMillis < 2000) //2 SECOND REACTION WINDOW
+  {
+    for (int i = 0; i < numPlayers; i++) //LOOP UNTIL THERE ARE NO PLAYERS
+    {
+      if (isAlive[i] && digitalRead(buttonPins[i]) == LOW) 
+      {
+        if (i == chosenPlayer) //IF THE CHOSEN PLAYER PRESSES AN INPUT
+        {
+          pressedInTime = true;
+        } else //CHECK IF A PLAYER PRESSES THE BUTTON OUTSIDE THEIR TURN
+        {
+          lives[i]--;
+          Serial.print("Player ");
+          Serial.print(i + 1);
+          Serial.print(" pressed out of turn! Lives left: ");
+          Serial.println(lives[i]);
+
+          if (lives[i] <= 0) //CHECK IF THE PLAYER HAS ANYMORE LIVES LEFT
+          { 
+            isAlive[i] = false;
+            Serial.print("Player ");
+            Serial.print(i + 1);
+            Serial.println(" eliminated!");
+          }
+
+          tone(9, 80, 300); //PENALITY TONE THE SPEAKER WILL OUTPUT
+        }
+      }
+    }
+  }
+
+  //CLEAR LIGHTS AFTER THE REACTION WINDOW
+  pixels.clear();
+  pixels.show();
+
+  //RESULTS OF EACH ROUND
+  if (pressedInTime) //IF THE PLAYER PRESSED THE CORRECT BUTTON
+  {
+    Serial.print("Player ");
+    Serial.print(chosenPlayer + 1);
+    Serial.println(" survived.");
+    tone(9, 160, 50); //TONE TO SIGNAL A NEW ROUND HAS STARTED/SUCCESS
+  } else //PLAYER WILL LOSE A LIFE IF THEY MISS THE BUTTON
+  {
+    lives[chosenPlayer]--;
+    Serial.print("Player ");
+    Serial.print(chosenPlayer + 1);
+    Serial.print(" missed! Lives left: ");
+    Serial.println(lives[chosenPlayer]);
+
+    if (lives[chosenPlayer] <= 0) //IF A PLAYERS LIFE HAS REACHED 0 THEN THEY ARE ELIMINATED
+    {
+      isAlive[chosenPlayer] = false;
+      Serial.print("Player ");
+      Serial.print(chosenPlayer + 1);
+      Serial.println(" eliminated!");
+    }
+
+    tone(9, 80, 300); //UNSUCCESSFUL TONE
+  }
+}
+
+//THIS WILL SHOW THE COLOUR OF THE SELECTED PLAYER
+void showPlayerColor(int player) 
+{
+  pixels.clear();
+  for (int i = 0; i < numLeds; i++) 
+  {
+    pixels.setPixelColor(i, playerColors[player]);
+  }
+  pixels.show();
+}
+
+//THIS WILL SELECT A RANDOM PLAYER AT RANDOM
+int selectRandomAlivePlayer() 
+{
+  while (true)
+  {
+    int p = random(numPlayers);
+    if (isAlive[p]) return p;
+  }
+}
+
+//THIS WILL CHECK HOW MANY PLAYER ARE ALIVE
+int countActivePlayers() 
+{
+  int count = 0;
+  for (int i = 0; i < numPlayers; i++) 
+  {
+    if (isAlive[i]) count++;
+  }
+  return count;
+}
+
+//THIS WILL ANNOUNCE THE PLAYER AND WILL DISPLAY THAT PLAYER COLOUR ON THE RING
+void announceWinner() 
+{
+  for (int i = 0; i < numPlayers; i++) 
+  {
+    if (isAlive[i]) 
+    {
+      Serial.print("Player ");
+      Serial.print(i + 1);
+      Serial.println(" wins!");
+      flashWinnerColor(i);
+      break;
+    }
+  }
+}
+
+//THIS WILL FLASH THE WINNER COLOUR 
+void flashWinnerColor(int player) {
+  for (int j = 0; j < 6; j++) {
+    pixels.clear();
+    pixels.show();
+    delay(300);
+    for (int i = 0; i < numLeds; i++) {
+      pixels.setPixelColor(i, playerColors[player]);
+    }
+    pixels.show();
+    delay(300);
+  }
+}
+
+//WAIT FOR ANY PLAYER TO RESTART THE GAME BY PRESSING ANY OF THE BUTTONS
+void waitForRestart() 
+{
+  Serial.println("Press any button to restart...");
+  while (true) 
+  {
+    for (int i = 0; i < numPlayers; i++) 
+    {
+      if (digitalRead(buttonPins[i]) == LOW) 
+      {
+        Serial.println("Restarting...");
+        delay(1000);
+        return;
+      }
+    }
+  }
+}
+
+//THIS WILL START/RESTART THE GAME
+void startGame() 
+{
+  for (int i = 0; i < numPlayers; i++) 
+  {
+    lives[i] = maxLives;
+    isAlive[i] = true;
+  }
+
+  pixels.clear();
+  pixels.show();
+  Serial.println("Game Start!");
+}
+```
+[^12] [^13] [^14] [^15] [^16] [^17] [^18]
 ## **MANUAL**
 
 - HOW TO OPERATE THE GAME
@@ -755,6 +986,11 @@ This is a more cleaned up version of the results from each round with the addito
 - HEALTH AND SAFETY WARNINGS
 
 ## **PLAYTESTING**
+
+[THIS IS A LINK TO PART 1 OF THE PLAYTEST](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/PLAYTEST_1.mov)
+[THIS IS A LINK TO PART 2 OF THE PLAYTEST](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/PLAYTEST_2.mov)
+[THIS IS A LINK TO PART 3 OF THE PLAYTEST](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/PLAYTEST_3.mov)
+[THIS IS A LINK TO PART 4 OF THE PLAYTEST](https://github.com/CaNi31/TANGIBLE-PROJECT/blob/main/Videos/PLAYTEST_4.mov)
 
 An in-depth evaluation, for example discussing playability, engagement, and ideas for improvement. The evaluation must comment on the game's accessibility, and how any identified accessibility issues might be addressed
 
@@ -771,3 +1007,10 @@ An in-depth evaluation, for example discussing playability, engagement, and idea
 [^9]: https://docs.arduino.cc/built-in-examples/digital/Button/
 [^10]: https://projecthub.arduino.cc/bruno_opaiva/controling-servo-motors-with-buttons-and-arduino-bcb3b6
 [^11]: https://docs.arduino.cc/language-reference/en/functions/advanced-io/tone/
+[^12]: https://docs.arduino.cc/language-reference/en/functions/digital-io/digitalread/
+[^13]:https://docs.arduino.cc/built-in-examples/digital/Debounce/
+[^14]:https://docs.arduino.cc/language-reference/en/functions/advanced-io/tone/
+[^15]:https://learn.adafruit.com/adafruit-pam8302-mono-2-5w-class-d-audio-amplifier/pinouts
+[^16]:https://www.instructables.com/How-to-use-a-Buzzer-Arduino-Tutorial/
+[^17]:https://roboticsbackend.com/arduino-push-button-tutorial/
+[^18]:https://medium.com/@elonskolnik/arduino-uno-tutorial-neopixel-ring-setup-9fafc099c89a
